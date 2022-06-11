@@ -1,0 +1,55 @@
+{% extends "base.html" %}{% block title %} Admin | Tambahkan Pesanan {%endblock
+%}{% block content %}
+<div class="card card-primary">
+  <div class="card-header">
+    <h3 class="card-title">Tambahkan Data Pesanan</h3>
+  </div>
+  <!-- /.card-header -->
+  <div class="card-body">
+    <form method="post">
+      <div class="row">
+        <div class="col-sm-12">
+          <!-- text input -->
+          <div class="form-group">
+            <label>Nama Pemesan</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Nama Pemesan"
+              id="in_nama_pemesan"
+              name="in_nama_pemesan"
+            />
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label>Tanggal Pemesanan</label>
+            <input
+              type="date"
+              class="form-control date"
+              placeholder=""
+              id="in_tgl_pemesanan"
+              name="in_tgl_pemesanan"
+            />
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label>No Kamar</label>
+            <input
+              type="number"
+              class="form-control"
+              placeholder="Enter No Kamar"
+              id="in_no_kamar"
+              name="in_no_kamar"
+            />
+          </div>
+        </div>
+        <div class="card-footer">
+            <input type="submit" class="btn btn-primary" value="Submit"/>
+        </div>
+    </form>
+  </div>
+  <!-- /.card-body -->
+</div>
+{% endblock %}
