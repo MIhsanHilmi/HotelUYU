@@ -14,10 +14,13 @@
 > 5. [Referensi](#Referensi)
 
 ## Tentang
+> Problem: problem dalam pemesanan kamar hotel yang masih menggunakan kertas karna bisa saja kertas itu hilang dan data menjadi tidak aman, tidak efisien, dan memakan waktu yang tidak sedikit
 > 
+> Solusi: dengan membuat aplikasi ini data yang dimasukan lebih aman dan jelas siapa yang memesan, memesan kamar tipe apa, dan kamar no berapa, lebih efisien dan tidak memakan waktu yang banyak
 
 ## Rancangan Aplikasi
->
+>![flowchart](https://user-images.githubusercontent.com/105422801/173190946-71e4a7a2-6cb3-4245-9a82-943a29a411de.png)
+
 
 ## Panduan Instalasi
 > 
