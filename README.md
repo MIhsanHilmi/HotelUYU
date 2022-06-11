@@ -21,6 +21,8 @@
 ## Rancangan Aplikasi
 >![flowchart](https://user-images.githubusercontent.com/105422801/173191737-b0f6f7bb-1b5a-4108-b8da-50fc69f9a84a.png)
 
+![ERD](https://user-images.githubusercontent.com/105422801/173192671-3d21db4e-bf5c-4f9f-af78-27b9172765c4.png)
+
 ## Panduan Instalasi
 > 
 
