@@ -19,8 +19,7 @@
 > Solusi: dengan membuat aplikasi ini data yang dimasukan lebih aman dan jelas siapa yang memesan, memesan kamar tipe apa, dan kamar no berapa, lebih efisien dan tidak memakan waktu yang banyak
 
 ## Rancangan Aplikasi
->![flowchart](https://user-images.githubusercontent.com/105422801/173190946-71e4a7a2-6cb3-4245-9a82-943a29a411de.png)
-
+>![flowchart](https://user-images.githubusercontent.com/105422801/173191737-b0f6f7bb-1b5a-4108-b8da-50fc69f9a84a.png)
 
 ## Panduan Instalasi
 > 
