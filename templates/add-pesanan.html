@@ -44,6 +44,22 @@
               placeholder="Enter No Kamar"
               id="in_no_kamar"
               name="in_no_kamar"
+              onkeypress="limit(this)"
+              onkeyup="update(this)"
+            />
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label>Jenis Kamar</label>
+            <input
+              type="text"
+              class="form-control disabled"
+              placeholder=""
+              value=""
+              id="in_jenis_kamar"
+              name="in_jenis_kamar"
+              disabled
             />
           </div>
         </div>
@@ -54,4 +70,28 @@
   </div>
   <!-- /.card-body -->
 </div>
+<script>
+  function update(id){
+    var no_kamar = document.getElementById('in_no_kamar');
+    if(no_kamar.value > 60){
+      no_kamar.value = 60;
+    }
+    const request = new XMLHttpRequest();
+      data = "";
+      var no = id;
+      request.open(
+        "GET",
+        "/api/jenis/"+no.value
+      );
+      request.onload = () => {
+        const response = request.responseText;
+        data = response;
+        if(data == "This page was not found"){
+          data = "NONE";
+        }
+        document.getElementById('in_jenis_kamar').value = data;
+      }
+      request.send();
+  }
+</script>
 {% endblock %}

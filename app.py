@@ -18,6 +18,16 @@ mysql = MySQL(app)
 
 app.config['SECRET_KEY'] = os.urandom(24)
 
+@app.route('/api/jenis/<no>',methods=['GET'])
+def getJenis(no):
+    try:
+        cur = mysql.connection.cursor()
+        sql = "SELECT jenis_kamar FROM kamar WHERE no_kamar={}".format(no)
+        result = cur.execute(sql)
+        data = cur.fetchone()
+        return render_template('jenis.html',jenis=data)
+    except:
+        return render_template('jenis.html',jenis="None")
 
 @app.route('/pesanan', methods=['GET', 'POST'])
 def pesanan():
